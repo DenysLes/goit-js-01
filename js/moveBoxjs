@@ -1,0 +1,49 @@
+// let x = 50;
+// let y = 50;
+
+// function moveBox() {
+//   x += 50; // каждый клик двигает вправо на 50px
+//   y += 20; // и вниз на 20px
+//   const box = document.getElementById('box');
+//   box.style.left = x + 'px';
+//   box.style.top = y + 'px';
+// }
+// moveBox();
+// moveBox();
+// moveBox();
+// const box = document.getElementById('box');
+
+// document.addEventListener('click', function (e) {
+//   // Вираховуємо координати кліку, щоб елемент центровано рухався
+//   const boxWidth = box.offsetWidth;
+//   const boxHeight = box.offsetHeight;
+
+//   const newX = e.clientX - boxWidth / 2;
+//   const newY = e.clientY - boxHeight / 2;
+
+//   box.style.left = newX + 'px';
+//   box.style.top = newY + 'px';
+// });
+// const btn = document.querySelector('.btn');
+// btn.addEventListener('click', moveBox);
+// let counter = 0;
+
+// function moveBox() {
+//   counter++; // збільшуємо лічильник
+//   const box = document.getElementById('box');
+//   box.style.left = 100 + counter + 'px'; // рухаємо на counter пікселів від початкової позиції
+// }
+// moveBox();
+
+const btn = document.querySelector('.btn');
+btn.addEventListener('click', moveBox);
+let counter = 0;
+function moveBox() {
+  for (let i = 0; i < 5; i++) {
+    counter++;
+  }
+  const box = document.getElementById('box');
+  box.style.left = 100 + counter + 'px';
+}
+
+moveBox();
