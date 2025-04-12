@@ -1,0 +1,21 @@
+/* .qtr {
+    width: 200px;
+    height: 200px;
+} */
+ .ball {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     background-color: #bbb;
+ }
+ .button {
+    text-align: center;
+  align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #2d9cf1;
+ }
+ .button:hover {
+background-color: #4410ef;
+ }

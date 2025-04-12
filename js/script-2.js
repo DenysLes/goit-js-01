@@ -1,4 +1,17 @@
-const mamo = 'Перемінна "mamo" в script-2';
-console.log(mamo);
-const vamo = 'Перемінна "vamo" в script-2';
-console.log(vamo);
+// let qtr = document.querySelector('.qtr');
+// qtr.style.background = 'blue';
+// // let count = 0;
+// qtr.addEventListener('click', handlerClick);
+
+// function handlerClick() {
+//   //   qtr.style.left = 200;
+//   qtr.style.left = parseFloat(qtr.left) + 20 + 'px';
+//   //   qtr.left = parseFloat(qtr.left) + 20 + 'px';
+// }
+// handlerClick();
+let button = document.querySelector('.button');
+let ball = document.querySelector('.ball').style;
+
+button.onclick = function () {
+  ball.left = parseFloat(ball.left) + 20 + 'px';
+};
